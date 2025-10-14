@@ -1,0 +1,22 @@
+# Test files (keep Easter egg secret!)
+test_easter_egg.sh
+
+# Raw Bible text (too large)
+bibel_raw.txt
+bibel_content.txt
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+.directory
+
+# Editor files
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Logs
+*.log
