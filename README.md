@@ -21,7 +21,7 @@ Ein TempleOS-inspirierter zufälliger Bibelvers-Generator für die Kommandozeile
 
 1. Repository klonen:
 ```bash
-git clone https://github.com/DEIN-USERNAME/BibleVerse-TempleOS-Tribute.git
+git clone https://github.com/PC-Principal-1337/BibleVerse-TempleOS-Tribute.git
 cd BibleVerse-TempleOS-Tribute
 ```
 
