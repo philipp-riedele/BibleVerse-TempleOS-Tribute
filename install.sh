@@ -67,7 +67,12 @@ case $choice in
         # Create symlink
         sudo ln -s "$SCRIPT_DIR/BibleVerse" /usr/local/bin/BibleVerse
 
+        # Create aliases
+        sudo ln -sf /usr/local/bin/BibleVerse /usr/local/bin/bibleverse
+        sudo ln -sf /usr/local/bin/BibleVerse /usr/local/bin/godsays
+
         INSTALL_PATH="/usr/local/bin/BibleVerse"
+        echo -e "${GREEN}✓ Aliases created: bibleverse, godsays${RESET}"
         ;;
 
     2)
@@ -95,7 +100,12 @@ case $choice in
         # Create symlink
         ln -s "$SCRIPT_DIR/BibleVerse" ~/.local/bin/BibleVerse
 
+        # Create aliases
+        ln -sf ~/.local/bin/BibleVerse ~/.local/bin/bibleverse
+        ln -sf ~/.local/bin/BibleVerse ~/.local/bin/godsays
+
         INSTALL_PATH="$HOME/.local/bin/BibleVerse"
+        echo -e "${GREEN}✓ Aliases created: bibleverse, godsays${RESET}"
 
         # Check if ~/.local/bin is in PATH
         if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then

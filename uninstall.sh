@@ -52,7 +52,10 @@ if [ -n "$SYSTEM_INSTALL" ]; then
     echo ""
     echo -e "${CYAN}Removing system-wide installation...${RESET}"
     sudo rm -f /usr/local/bin/BibleVerse
+    sudo rm -f /usr/local/bin/bibleverse
+    sudo rm -f /usr/local/bin/godsays
     echo -e "${GREEN}✓ Removed /usr/local/bin/BibleVerse${RESET}"
+    echo -e "${GREEN}✓ Removed aliases: bibleverse, godsays${RESET}"
 fi
 
 # Remove user installation
@@ -60,7 +63,10 @@ if [ -n "$USER_INSTALL" ]; then
     echo ""
     echo -e "${CYAN}Removing user installation...${RESET}"
     rm -f ~/.local/bin/BibleVerse
+    rm -f ~/.local/bin/bibleverse
+    rm -f ~/.local/bin/godsays
     echo -e "${GREEN}✓ Removed ~/.local/bin/BibleVerse${RESET}"
+    echo -e "${GREEN}✓ Removed aliases: bibleverse, godsays${RESET}"
 fi
 
 echo ""
